@@ -1,0 +1,9 @@
+E:\TAFE\Open Source and Testing Cluster\Assignments\Assessment 3\VehicleRent\VehicleRent\bin\Debug\VehicleRent.exe.config
+E:\TAFE\Open Source and Testing Cluster\Assignments\Assessment 3\VehicleRent\VehicleRent\bin\Debug\VehicleRent.exe
+E:\TAFE\Open Source and Testing Cluster\Assignments\Assessment 3\VehicleRent\VehicleRent\bin\Debug\VehicleRent.pdb
+E:\TAFE\Open Source and Testing Cluster\Assignments\Assessment 3\VehicleRent\VehicleRent\obj\Debug\VehicleRent.csprojResolveAssemblyReference.cache
+E:\TAFE\Open Source and Testing Cluster\Assignments\Assessment 3\VehicleRent\VehicleRent\obj\Debug\VehicleRent.Main.resources
+E:\TAFE\Open Source and Testing Cluster\Assignments\Assessment 3\VehicleRent\VehicleRent\obj\Debug\VehicleRent.Properties.Resources.resources
+E:\TAFE\Open Source and Testing Cluster\Assignments\Assessment 3\VehicleRent\VehicleRent\obj\Debug\VehicleRent.csproj.GenerateResource.Cache
+E:\TAFE\Open Source and Testing Cluster\Assignments\Assessment 3\VehicleRent\VehicleRent\obj\Debug\VehicleRent.exe
+E:\TAFE\Open Source and Testing Cluster\Assignments\Assessment 3\VehicleRent\VehicleRent\obj\Debug\VehicleRent.pdb
