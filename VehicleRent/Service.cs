@@ -11,6 +11,7 @@ namespace VehicleRent
 
         //variables here
         bool serviceRequired;
+        double distance;
 
         //default constructor
         public Service()
@@ -19,9 +20,10 @@ namespace VehicleRent
         }
 
         //parameter constructor
-        public Service(bool sServiceRequired)
+        public Service(bool sServiceRequired, double sDistance)
         {
             serviceRequired = sServiceRequired;
+            distance = sDistance;
         }
 
         //get/sets
@@ -29,6 +31,35 @@ namespace VehicleRent
         {
             get { return (serviceRequired); }
             set { serviceRequired = value; }
+        }
+        public double Distance
+        {
+            get { return (distance); }
+            set { distance = value; }
+        }
+
+        //divide distance by 100 until result > 100 and < 200, mod result, if that result = 0 then swap bool to needs service
+        
+        public bool serviceCheck()
+        {
+            double calculation = distance;
+
+            do
+            {
+                    //the bit in here needs to find the mod value to determine if a service is required or not
+                calculation = calculation / 100;
+            } while (calculation > 100);
+
+            calculation = calculation % 100;
+            if (calculation == 0)
+            {
+                serviceRequired = true;
+            }
+            else
+            {
+                serviceRequired = false;
+            }
+            return serviceRequired;
         }
 
 

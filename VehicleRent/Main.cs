@@ -36,18 +36,23 @@ namespace VehicleRent
                     FuelPurchase fuel = new FuelPurchase();
                     PerDayRental days = new PerDayRental();
                     PerKmRental km = new PerKmRental();
+                    Service services = new Service();
 
                     distance.DistanceTravelled = Convert.ToDouble(txtTravelled.Text);
                     fuel.FuelPurchased = Convert.ToDouble(txtFuel.Text);
                     days.DaysHired = Convert.ToInt32(txtDays.Text);
                     km.TravelDistance = distance.DistanceTravelled;
+                    services.Distance = distance.DistanceTravelled;
 
                     vehicles[i].addJourney(distance.DistanceTravelled);
                     vehicles[i].addFuelPurchased(fuel.FuelPurchased);
                     km.getCost();
                     days.getCost();
+                    services.serviceCheck();
+
                     vehicles[i].addRevenueDays(days.Cost);
                     vehicles[i].addRevenueKm(km.Cost);
+                    vehicles[i].addServiceRequired(services.ServiceRequired);
 
                     listAllInfo.Items.Add(vehicles[i].printToScreen()); //displays full information to listbox
                 }

@@ -22,7 +22,7 @@ namespace VehicleRent
         private double revenueDay;
         private double totalRevenue;
 
-        //bool requiresService;
+        bool requiresService;
 
 
         //default constructor
@@ -108,11 +108,24 @@ namespace VehicleRent
             totalRevenue = revenueKm + revenueDay;
             return totalRevenue;
         }
+        
+        public void addServiceRequired(bool service)
+        {
+            requiresService = service;
+        }
 
 
         public string printToScreen()
         {
-            return "Id:" + vehicleId + "\n Manufacturer: " + manufacturer + "\n Model: " + model + "\n Make Year: " + makeYear + " \n Registration: " + registration + "\n Total km Travelled: " + travelDistance + " \n Total Services: " + Convert.ToInt32(travelDistance / 100) + "\n Fuel Economy: " + fuelUsed / (travelDistance / 100) + @" / L100km Total Revenue: $" + addCombinedRevenue();
+            if (requiresService == false)
+            {
+                return "Id:" + vehicleId + "\n Manufacturer: " + manufacturer + "\n Model: " + model + "\n Make Year: " + makeYear + " \n Registration: " + registration + "\n Total km Travelled: " + travelDistance + " \n Total Services: " + Convert.ToInt32(travelDistance / 100) + "\n Fuel Economy: " + fuelUsed / (travelDistance / 100) + @" / L100km Total Revenue: $" + addCombinedRevenue() + " Requires Service: No";
+            }
+            else
+            {
+                return "Id:" + vehicleId + "\n Manufacturer: " + manufacturer + "\n Model: " + model + "\n Make Year: " + makeYear + " \n Registration: " + registration + "\n Total km Travelled: " + travelDistance + " \n Total Services: " + Convert.ToInt32(travelDistance / 100) + "\n Fuel Economy: " + fuelUsed / (travelDistance / 100) + @" / L100km Total Revenue: $" + addCombinedRevenue() + " Requires Service: Yes";
+            }
+            
         }
     }
 }
