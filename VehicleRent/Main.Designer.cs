@@ -55,9 +55,9 @@
             // listOutput
             // 
             this.listOutput.FormattingEnabled = true;
-            this.listOutput.Location = new System.Drawing.Point(403, 33);
+            this.listOutput.Location = new System.Drawing.Point(361, 33);
             this.listOutput.Name = "listOutput";
-            this.listOutput.Size = new System.Drawing.Size(727, 82);
+            this.listOutput.Size = new System.Drawing.Size(769, 82);
             this.listOutput.TabIndex = 10;
             // 
             // lblTravelled
@@ -204,9 +204,9 @@
             // listAllInfo
             // 
             this.listAllInfo.FormattingEnabled = true;
-            this.listAllInfo.Location = new System.Drawing.Point(403, 175);
+            this.listAllInfo.Location = new System.Drawing.Point(361, 175);
             this.listAllInfo.Name = "listAllInfo";
-            this.listAllInfo.Size = new System.Drawing.Size(822, 160);
+            this.listAllInfo.Size = new System.Drawing.Size(953, 160);
             this.listAllInfo.TabIndex = 11;
             // 
             // lblAllOutput
@@ -238,7 +238,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1237, 427);
+            this.ClientSize = new System.Drawing.Size(1326, 427);
             this.Controls.Add(this.txtDays);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.lblAllOutput);
