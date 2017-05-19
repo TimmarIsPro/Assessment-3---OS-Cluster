@@ -87,25 +87,25 @@ namespace VehicleRent
         
         public void addJourney(double distance)
         {
-            travelDistance = travelDistance + distance;
+            travelDistance = distance;
         }
 
         public void addFuelPurchased(double fuel)
         {
-            fuelUsed = fuelUsed + fuel;
+            fuelUsed = fuel;
         }
         public void addRevenueKm(double revKm)
         {
-            revenueKm = revenueKm + revKm;
+            revenueKm = revKm;
         }
         public void addRevenueDays(double revDay)
         {
-            revenueDay = revenueDay + revDay;
+            revenueDay = revDay;
         }
 
         public double addCombinedRevenue()
         {
-            totalRevenue = totalRevenue + (revenueKm + revenueDay);
+            totalRevenue = revenueKm + revenueDay;
             return totalRevenue;
         }
         
@@ -119,7 +119,7 @@ namespace VehicleRent
         {
             if (requiresService == false)
             {
-                return "Id:" + vehicleId + "\n Manufacturer: " + manufacturer + "\n Model: " + model + "\n Make Year: " + makeYear + " \n Registration: " + registration + "\n Total km Travelled: " + travelDistance + " \n Total Services: " + Convert.ToInt32(travelDistance / 100) + "\n Fuel Economy: " + fuelUsed / (travelDistance / 100) + @" / L100km Total Revenue: $" + addCombinedRevenue() + " Requires Service: No";
+                return "Id:" + vehicleId + "\n Manufacturer: " + manufacturer + "\n Model: " + model + "\n Make Year: " + makeYear + " \n Registration: " + registration + "\n Total km Travelled: " + travelDistance + " \n Total Services: " + Convert.ToInt32(travelDistance / 100) + "\n Fuel Economy: " + Math.Round(fuelUsed / (travelDistance / 100), 2) + @" / L100km Total Revenue: $" + addCombinedRevenue() + " Requires Service: No";
             }
             else
             {

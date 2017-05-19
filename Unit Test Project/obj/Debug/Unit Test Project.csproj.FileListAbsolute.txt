@@ -1,0 +1,8 @@
+E:\TAFE\Open Source and Testing Cluster\Assignments\Assessment 3\VehicleRent\Unit Test Project\bin\Debug\Unit Test Project.dll
+E:\TAFE\Open Source and Testing Cluster\Assignments\Assessment 3\VehicleRent\Unit Test Project\bin\Debug\Unit Test Project.pdb
+E:\TAFE\Open Source and Testing Cluster\Assignments\Assessment 3\VehicleRent\Unit Test Project\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+E:\TAFE\Open Source and Testing Cluster\Assignments\Assessment 3\VehicleRent\Unit Test Project\bin\Debug\VehicleRent.exe
+E:\TAFE\Open Source and Testing Cluster\Assignments\Assessment 3\VehicleRent\Unit Test Project\bin\Debug\VehicleRent.pdb
+E:\TAFE\Open Source and Testing Cluster\Assignments\Assessment 3\VehicleRent\Unit Test Project\obj\Debug\Unit Test Project.csprojResolveAssemblyReference.cache
+E:\TAFE\Open Source and Testing Cluster\Assignments\Assessment 3\VehicleRent\Unit Test Project\obj\Debug\Unit Test Project.dll
+E:\TAFE\Open Source and Testing Cluster\Assignments\Assessment 3\VehicleRent\Unit Test Project\obj\Debug\Unit Test Project.pdb

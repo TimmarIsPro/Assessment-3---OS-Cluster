@@ -262,7 +262,7 @@
             this.Controls.Add(this.lblTravelled);
             this.Controls.Add(this.listOutput);
             this.Name = "Main";
-            this.Text = "Form1";
+            this.Text = "Vehicle Management";
             this.ResumeLayout(false);
             this.PerformLayout();
 
