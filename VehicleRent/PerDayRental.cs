@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace VehicleRent
 {
-    class PerDayRental
+    public class PerDayRental
     {
         //variables here
         double cost;
@@ -44,8 +44,17 @@ namespace VehicleRent
 
         public double getCost()
         {
-            cost = daysHired * 100;
-            return cost;
+            if (daysHired < 0)
+            {
+                cost = 0; //days cannot be negative, therefore should default to zero.
+                return cost;
+            }
+            else
+
+            {
+                cost = daysHired * 100;
+                return cost;
+            }
         }
 
     }
