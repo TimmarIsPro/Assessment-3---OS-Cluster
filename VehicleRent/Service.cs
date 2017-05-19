@@ -38,7 +38,7 @@ namespace VehicleRent
             set { distance = value; }
         }
 
-        //divide distance by 100 until result > 100 and < 200, mod result, if that result = 0 then swap bool to needs service
+
         
         public bool serviceCheck()
         {
@@ -47,7 +47,7 @@ namespace VehicleRent
             do
             {
                     //the bit in here needs to find the mod value to determine if a service is required or not
-                calculation = calculation / 100;
+                calculation = calculation - 100;
             } while (calculation > 100);
 
             calculation = calculation % 100;

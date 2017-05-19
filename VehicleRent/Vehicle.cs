@@ -22,7 +22,7 @@ namespace VehicleRent
         private double revenueDay;
         private double totalRevenue;
 
-        bool requiresService;
+        private bool requiresService;
 
 
         //default constructor
@@ -87,25 +87,25 @@ namespace VehicleRent
         
         public void addJourney(double distance)
         {
-            travelDistance = distance;
+            travelDistance = travelDistance + distance;
         }
 
         public void addFuelPurchased(double fuel)
         {
-            fuelUsed = fuel;
+            fuelUsed = fuelUsed + fuel;
         }
         public void addRevenueKm(double revKm)
         {
-            revenueKm = revKm;
+            revenueKm = revenueKm + revKm;
         }
         public void addRevenueDays(double revDay)
         {
-            revenueDay = revDay;
+            revenueDay = revenueDay + revDay;
         }
 
         public double addCombinedRevenue()
         {
-            totalRevenue = revenueKm + revenueDay;
+            totalRevenue = totalRevenue + (revenueKm + revenueDay);
             return totalRevenue;
         }
         
